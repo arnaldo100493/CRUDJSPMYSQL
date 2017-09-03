@@ -61,11 +61,11 @@ public class ServletUpdate extends HttpServlet {
         if (request.getMethod().equals("POST")) {
             this.ejbTProducto = new EJBTProducto();
 
-            this.ejbTProducto.getTProducto().setIdProducto(Integer.parseInt(request.getParameter("textIdProducto")));
-            this.ejbTProducto.getTProducto().setNombreProducto(request.getParameter("textNombreProducto"));
-            this.ejbTProducto.getTProducto().setPrecioVenta(new BigDecimal(request.getParameter("textPrecioVenta")));
+            this.ejbTProducto.getTProducto().setIdProducto(Integer.parseInt(request.getParameter("txtIdProducto")));
+            this.ejbTProducto.getTProducto().setNombreProducto(request.getParameter("txtNombreProducto"));
+            this.ejbTProducto.getTProducto().setPrecioVenta(new BigDecimal(request.getParameter("txtPrecioVenta")));
             this.ejbTProducto.getTProducto().setFechaVencimiento(Date.valueOf(request.getParameter("dateFechaVencimiento")));
-            this.ejbTProducto.getTProducto().setEstado(request.getParameter("textEstado").equals("true") ? true : false);
+            this.ejbTProducto.getTProducto().setEstado(request.getParameter("txtEstado").equals("true") ? true : false);
 
             String mensajeRespuesta = "";
             String mensajeError = "";
