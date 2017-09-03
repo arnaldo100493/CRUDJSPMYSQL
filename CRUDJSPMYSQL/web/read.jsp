@@ -26,7 +26,7 @@
     </head>
     <body>
         <h1>Datos Productos</h1>
-        <jsp:useBean id="ejbProducto" scope="request" class="com.crud.ejb.EJBProducto"/>
+        <jsp:useBean id="ejbProducto" scope="request" class="com.crud.ejb.EJBTProducto"/>
         <table border="1">
             <thead>
                 <tr>
