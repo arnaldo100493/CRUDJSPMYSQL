@@ -47,11 +47,7 @@ public class ServletDelete extends HttpServlet {
             String mensajeRespuesta = "";
             String mensajeError = "";
 
-            boolean valorRetornado = false;
-
-            valorRetornado = this.ejbTProducto.delete(request.getParameter("idProducto"));
-
-            if (valorRetornado) {
+            if (this.ejbTProducto.delete(request.getParameter("idProducto"))) {
                 mensajeRespuesta = "Producto Borrado Correctamente.";
                 request.setAttribute("mensajeRespuesta", mensajeRespuesta);
                 request.getRequestDispatcher("respuesta.jsp").forward(request, response);

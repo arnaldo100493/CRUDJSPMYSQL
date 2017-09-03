@@ -44,11 +44,7 @@ public class ServletRead extends HttpServlet {
         if (request.getMethod().equals("GET")) {
             this.ejbTProducto = new EJBTProducto();
 
-            boolean valorRetornado = false;
-
-            valorRetornado = this.ejbTProducto.getAll();
-
-            if (valorRetornado) {
+            if (this.ejbTProducto.getAll()) {
                 request.setAttribute("ejbTProducto", this.ejbTProducto);
                 request.getRequestDispatcher("read.jsp").forward(request, response);
             } else {

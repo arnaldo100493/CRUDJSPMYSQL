@@ -57,11 +57,7 @@ public class ServletInsert extends HttpServlet {
             String mensajeRespuesta = "";
             String mensajeError = "";
 
-            boolean valorRetornado = false;
-
-            valorRetornado = this.ejbTProducto.insert();
-
-            if (valorRetornado) {
+            if (this.ejbTProducto.insert()) {
                 mensajeRespuesta = "Inserción Correcta.";
                 request.setAttribute("mensajeRespuesta", mensajeRespuesta);
                 request.getRequestDispatcher("respuesta.jsp").forward(request, response);

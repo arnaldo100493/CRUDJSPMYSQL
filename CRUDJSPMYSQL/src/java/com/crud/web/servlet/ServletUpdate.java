@@ -70,11 +70,7 @@ public class ServletUpdate extends HttpServlet {
             String mensajeRespuesta = "";
             String mensajeError = "";
 
-            boolean valorRetornado = false;
-
-            valorRetornado = this.ejbTProducto.update();
-
-            if (valorRetornado) {
+            if (this.ejbTProducto.update()) {
                 mensajeRespuesta = "Actualizacion Correcta.";
                 request.setAttribute("mensajeRespuesta", mensajeRespuesta);
                 request.getRequestDispatcher("respuesta.jsp").forward(request, response);

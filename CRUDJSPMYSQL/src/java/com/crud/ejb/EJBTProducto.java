@@ -37,7 +37,7 @@ public class EJBTProducto {
         try {
             this.conexion = ConexionDB.conectar();
             this.tProducto.setEstado(true);
-            valorRetornado = daoTProducto.insert(this.conexion, this.tProducto);
+            valorRetornado = this.daoTProducto.insert(this.conexion, this.tProducto);
             this.conexion.close();
         } catch (Exception ex) {
             valorRetornado = false;
