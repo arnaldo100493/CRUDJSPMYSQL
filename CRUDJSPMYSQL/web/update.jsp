@@ -24,7 +24,7 @@
             <label for="dateFechaVencimiento">Fecha de Vencimiento</label>
             <input type="date" id="dateFechaVencimiento" name="dateFechaVencimiento" value="${ejbTProducto.getTProducto().fechaVencimiento}"/>
             <label for="txtIdProducto">Estado</label>
-            <input type="text" id="txtEstado" name="txtEstado" value="${ejbTProducto.getTProducto().estado}" readonly=""/> 
+            <input type="text" id="txtEstado" name="txtEstado" value="${ejbTProducto.getTProducto().estado}" readonly="readonly"/> 
             <input type="submit" value="Actualizar Datos"/>
             <br/>
             <br/>
