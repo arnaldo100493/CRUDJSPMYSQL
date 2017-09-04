@@ -13,15 +13,15 @@
         <title>Listar Producto</title>
         <script>
             function actualizar(idProducto) {
-                window.location.href="./update?idProducto=" + idProducto;
+                window.location.href = "./update?idProducto=" + idProducto;
             }
-             function borrar(idProducto){
-                var r=confirm("¿Esta seguro que desea eliminar este producto?");
-                if(r===true){
-                    window.location.href="./delete?idProducto=" + idProducto;
+            function borrar(idProducto) {
+                var r = confirm("¿Esta seguro que desea eliminar este producto?");
+                if (r === true) {
+                    window.location.href = "./delete?idProducto=" + idProducto;
                 }
             }
-            
+
         </script>
     </head>
     <body>
