@@ -10,7 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Listar Producto</title>
+        <title>Listado de Productos</title>
         <script>
             function actualizar(idProducto) {
                 window.location.href = "./update?idProducto=" + idProducto;
@@ -25,7 +25,7 @@
         </script>
     </head>
     <body>
-        <h1>Datos Productos</h1>
+        <h1>Listado de Productos</h1>
         <jsp:useBean id="ejbTProducto" scope="request" class="com.crud.ejb.EJBTProducto"/>
         <table border="1">
             <thead>
