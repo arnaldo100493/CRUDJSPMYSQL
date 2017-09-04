@@ -9,11 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Insertar Producto</title>
+        <title>Registrar Producto</title>
     </head>
     <body>
-        <h1>Insertar Datos</h1>
-        <form action="./insert" method="post">
+        <h1>Registrar Producto</h1>
+        <form name="frmProductos" action="./insert" method="post">
             <label for="txtNombreProducto">Nombre Producto</label>
             <input type="text" id="txtNombreProducto" name="txtNombreProducto"/>
             <label for="txtPrecioVenta">Precio Venta</label>

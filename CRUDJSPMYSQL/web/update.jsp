@@ -14,7 +14,7 @@
     <body>
         <h1>Datos a Editar</h1>
         <jsp:useBean id="ejbTProducto" scope="request" class="com.crud.ejb.EJBTProducto"/>
-        <form action="./update" method="post">
+        <form name="frmProductos" action="./update" method="post">
             <label for="txtIdProducto">Id Producto</label>
             <input type="text" id="txtIdProducto" name="txtIdProducto" value="${ejbTProducto.getTProducto().idProducto}" readonly="readonly"/> 
             <label for="txtNombreProducto">Nombre Producto</label>

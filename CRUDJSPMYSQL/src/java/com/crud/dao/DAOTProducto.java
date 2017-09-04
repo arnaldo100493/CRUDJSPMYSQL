@@ -68,7 +68,7 @@ public class DAOTProducto implements InterfaceDAOTProducto {
 
     @Override
     public List<TProducto> getAll(Connection conexion) throws Exception {
-        List<TProducto> listadoTProductos = new ArrayList<TProducto>();
+        List<TProducto> listadoTProductos = new ArrayList<>();
         TProducto tProducto;
 
         String sql = "select * from tproducto";
