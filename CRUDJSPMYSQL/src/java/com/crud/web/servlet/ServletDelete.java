@@ -44,10 +44,14 @@ public class ServletDelete extends HttpServlet {
         if (request.getMethod().equals("GET")) {
             this.ejbTProducto = new EJBTProducto();
 
-            String mensajeRespuesta = "";
-            String mensajeError = "";
+            String mensajeRespuesta;
+            String mensajeError;
+            
+            boolean valorRetornado;
+            
+            valorRetornado = this.ejbTProducto.delete(request.getParameter("idProducto"));
 
-            if (this.ejbTProducto.delete(request.getParameter("idProducto"))) {
+            if (valorRetornado) {
                 mensajeRespuesta = "Producto Borrado Correctamente.";
                 request.setAttribute("mensajeRespuesta", mensajeRespuesta);
                 request.getRequestDispatcher("respuesta.jsp").forward(request, response);

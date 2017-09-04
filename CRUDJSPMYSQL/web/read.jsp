@@ -26,7 +26,7 @@
     </head>
     <body>
         <h1>Datos Productos</h1>
-        <jsp:useBean id="ejbProducto" scope="request" class="com.crud.ejb.EJBTProducto"/>
+        <jsp:useBean id="ejbTProducto" scope="request" class="com.crud.ejb.EJBTProducto"/>
         <table border="1">
             <thead>
                 <tr>
@@ -36,13 +36,12 @@
                     <th>FECHA VENCIMIENTO</th>
                     <th>ESTADO</th>
                     <th>FECHA REGISTRO</th>
-                    <th>FECHA MODIFICACION</th>
-                    <th></th>
-                    <th></th>
+                    <th>FECHA MODIFICACIÓN</th>
+                    <th colspan="2">ACCIÓN</th>
                 </tr>
             </thead>
             <tbody>
-                <c:forEach var="item" items="${ejbProducto.listadoProductos}">
+                <c:forEach var="item" items="${ejbTProducto.listadoTProductos}">
                     <tr>
                         <td>${item.getIdProducto()}</td>
                         <td>${item.getNombreProducto()}</td>

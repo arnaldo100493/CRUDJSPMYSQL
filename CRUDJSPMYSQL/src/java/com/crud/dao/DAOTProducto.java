@@ -26,7 +26,7 @@ public class DAOTProducto implements InterfaceDAOTProducto {
 
     @Override
     public boolean insert(Connection conexion, TProducto tProducto) throws Exception {
-        boolean valorRetornado = false;
+        boolean valorRetornado;
         String sql = "insert into tproducto(nombreProducto, precioVenta, fechaVencimiento, estado) values('" + tProducto.getNombreProducto() + "', '" + tProducto.getPrecioVenta() + "', '" + tProducto.getFechaVencimiento() + "', " + tProducto.isEstado() + ");";
         Statement statement;
         statement = (Statement) conexion.createStatement();
@@ -101,7 +101,7 @@ public class DAOTProducto implements InterfaceDAOTProducto {
 
     @Override
     public boolean update(Connection conexion, TProducto tProducto) throws Exception {
-        boolean valorRetornado = false;
+        boolean valorRetornado;
         String sql = "update tproducto set nombreProducto = '" + tProducto.getNombreProducto() + "', precioVenta = '" + tProducto.getPrecioVenta() + "', fechaVencimiento = '" + tProducto.getFechaVencimiento() + "', estado = " + tProducto.isEstado() + " where idProducto = '" + tProducto.getIdProducto() + "';";
         Statement statement;
         statement = (Statement) conexion.createStatement();
@@ -113,7 +113,7 @@ public class DAOTProducto implements InterfaceDAOTProducto {
 
     @Override
     public boolean delete(Connection conexion, String idProducto) throws Exception {
-        boolean valorRetornado = false;
+        boolean valorRetornado;
         String sql = "delete from tproducto where idProducto = '" + idProducto + "'";
         Statement statement;
         statement = (Statement) conexion.createStatement();

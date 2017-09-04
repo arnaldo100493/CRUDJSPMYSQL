@@ -54,10 +54,14 @@ public class ServletInsert extends HttpServlet {
             this.ejbTProducto.getTProducto().setPrecioVenta(new BigDecimal(request.getParameter("txtPrecioVenta")));
             this.ejbTProducto.getTProducto().setFechaVencimiento(Date.valueOf(request.getParameter("dateFechaVencimiento")));
 
-            String mensajeRespuesta = "";
-            String mensajeError = "";
+            String mensajeRespuesta;
+            String mensajeError;
+            
+            boolean valorRetornado;
+            
+            valorRetornado = this.ejbTProducto.insert();
 
-            if (this.ejbTProducto.insert()) {
+            if (valorRetornado) {
                 mensajeRespuesta = "Inserción Correcta.";
                 request.setAttribute("mensajeRespuesta", mensajeRespuesta);
                 request.getRequestDispatcher("respuesta.jsp").forward(request, response);

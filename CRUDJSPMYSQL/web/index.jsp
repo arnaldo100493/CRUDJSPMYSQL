@@ -4,7 +4,7 @@
     Author     : ArnaldoAndres
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8" import="com.crud.jdbc.ConexionMySQL"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="com.crud.conexion.ConexionDB"%>
 <!DOCTYPE html>
 <html>
     <head>
