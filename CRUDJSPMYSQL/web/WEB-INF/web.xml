@@ -18,18 +18,22 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletInsert</servlet-name>
+        <url-pattern>/servletInsert</url-pattern>
         <url-pattern>/insert</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletRead</servlet-name>
+        <url-pattern>/servletRead</url-pattern>
         <url-pattern>/read</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletUpdate</servlet-name>
+        <url-pattern>/servletUpdate</url-pattern>
         <url-pattern>/update</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>ServletDelete</servlet-name>
+        <url-pattern>/servletDelete</url-pattern>
         <url-pattern>/delete</url-pattern>
     </servlet-mapping>
     <session-config>
