@@ -67,8 +67,8 @@ public class ServletUpdate extends HttpServlet {
             this.ejbTProducto.getTProducto().setFechaVencimiento(Date.valueOf(request.getParameter("dateFechaVencimiento")));
             this.ejbTProducto.getTProducto().setEstado(request.getParameter("txtEstado").equals("true") ? true : false);
 
-            String mensajeRespuesta = "";
-            String mensajeError = "";
+            String mensajeRespuesta;
+            String mensajeError;
 
             if (this.ejbTProducto.update()) {
                 mensajeRespuesta = "Actualizacion Correcta.";
