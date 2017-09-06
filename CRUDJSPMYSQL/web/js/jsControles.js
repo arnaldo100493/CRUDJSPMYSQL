@@ -23,7 +23,7 @@ function validar(form) {
     return true;
 }
 
-function editar(idProducto) {
+function actualizar(idProducto) {
     window.location.href = "./update?idProducto=" + idProducto;
 }
 
