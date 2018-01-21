@@ -6,7 +6,7 @@
 package com.crud.interfaces;
 
 import com.mysql.jdbc.Connection;
-import com.crud.encapsulamiento.TProducto;
+import com.crud.modelo.TProducto;
 import java.util.List;
 
 /**

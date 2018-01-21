@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.crud.conexion;
+package com.crud.jdbc;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.exceptions.MySQLDataException;

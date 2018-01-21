@@ -6,9 +6,9 @@
 package com.crud.ejb;
 
 import com.mysql.jdbc.Connection;
-import com.crud.conexion.ConexionDB;
+import com.crud.jdbc.ConexionDB;
 import com.crud.dao.DAOTProducto;
-import com.crud.encapsulamiento.TProducto;
+import com.crud.modelo.TProducto;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.Stateless;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.crud.encapsulamiento;
+package com.crud.modelo;
 
 import java.math.BigDecimal;
 import java.sql.Date;

@@ -7,7 +7,7 @@ package com.crud.dao;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
-import com.crud.encapsulamiento.TProducto;
+import com.crud.modelo.TProducto;
 import com.crud.interfaces.InterfaceDAOTProducto;
 import java.sql.ResultSet;
 import java.util.ArrayList;
